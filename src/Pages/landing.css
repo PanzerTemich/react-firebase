@@ -1,0 +1,14 @@
+main{
+    width: 100%;
+    display: grid;
+    grid-template: auto / repeat(auto-fill,minmax(300px,1fr));
+}
+.card{
+    background-color:orange;
+}
+.name{
+    text-align:center;
+}
+article img{
+    width:100%;
+}
