@@ -2,6 +2,7 @@ main{
     width: 100%;
     display: grid;
     grid-template: auto / repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 20px;
 }
 .card{
     background-color:orange;
@@ -11,4 +12,11 @@ main{
 }
 article img{
     width:100%;
+}
+.buttons{
+    display: flex;
+    justify-content:center;
+}
+.buttons button{
+    margin: 10px;
 }

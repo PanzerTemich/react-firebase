@@ -1,4 +1,5 @@
 import firebase from 'firebase/app';
+import 'firebase/auth';
 import 'firebase/firestore';
 var firebaseConfig = {
   apiKey: "AIzaSyCJfTpjSvZTEBBJw6Uu35cMnESnmIt9qQU",
@@ -11,4 +12,16 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 const fb=firebase.initializeApp(firebaseConfig);
+
 export const db = fb.firestore();
+// export const auth = firebase.auth();
+export const auth = fb.auth();
+
+// auth.signInWithEmailAndPassword(email,password);
+// auth.signOut();
+// auth.createUserWithEmailAndPassword(email,password);
+
+
+// auth.currentUser.updateProfile({
+//   displayName:name
+// })
